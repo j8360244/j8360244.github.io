@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan S. Reyes Nieves | Portfolio</title>
+    <title>Juan S. Reyes Nieves | IT & Software Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
+    <!-- Executive Navigation Bar -->
     <header>
-        <nav>
-            <div class="logo">JSRN</div>
-            <ul>
+        <nav class="nav-container">
+            <div class="logo">JSRN<span class="dot">.</span></div>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -21,97 +21,133 @@
         </nav>
     </header>
 
-    <!-- Hero / About Section -->
-    <section id="about" class="hero">
-        <div class="hero-content">
-            <!-- Replace 'profile.jpg' with your actual image file name later -->
-            <img src="profile.jpg" alt="Juan S. Reyes Nieves" class="profile-img">
-            <h1>Juan S. Reyes Nieves</h1>
-            <p class="subtitle">Information Technology | Software Analysis & Development</p>
-            <p class="bio">Bachelor of Science in IT graduate from Northbridge University, specializing in building desktop and web applications. Experienced with C#, Java, Python, SQL, and Cloud/Systems administration.</p>
-            <div class="contact-links">
-                <a href="mailto:juanreyesnieves@gmail.com" class="btn primary-btn">Email Me</a>
-                <a href="https://github.com/j8360244" target="_blank" class="btn secondary-btn">GitHub Profile</a>
+    <!-- Professional Hero Section -->
+    <section id="about" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-image-wrapper">
+                <!-- Replace 'profile.jpg' with your actual photo file name later -->
+                <img src="profile.jpg" alt="Juan S. Reyes Nieves" class="profile-img">
+            </div>
+            <div class="hero-text">
+                <span class="badge">Available for Roles & Internships</span>
+                <h1>Juan S. Reyes Nieves</h1>
+                <p class="subtitle">Information Technology | Software Analysis & Development</p>
+                <p class="bio">
+                    Results-driven Information Technology student specializing in Software Analysis and Development. 
+                    Experienced in architecting desktop and web applications with robust backend database integrations[cite: 1]. 
+                    Passionate about systems administration, optimization, and scalable software solutions[cite: 1].
+                </p>
+                <div class="cta-group">
+                    <a href="mailto:juanreyesnieves@gmail.com" class="btn btn-primary">Email Me</a>
+                    <a href="https://www.linkedin.com/in/juan-reyes-113794221/" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
+                    <a href="https://github.com/j8360244" target="_blank" class="btn btn-outline">GitHub</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2>Technical Projects</h2>
+    <!-- Technical Projects Portfolio -->
+    <section id="projects" class="section-container light-bg">
+        <div class="section-header">
+            <h2>Technical Projects</h2>
+            <p class="section-subtitle">Engineered applications focusing on performance, data integrity, and user experience.</p>
+        </div>
+        
         <div class="projects-grid">
-            
             <!-- Project 1 -->
             <div class="project-card">
-                <h3>Medical Management System</h3>
-                <p class="tech-stack">C# | SQL Server | Windows Forms</p>
-                <p>A CRUD application for managing patients, doctors, appointments, and diagnoses featuring a relational database and custom reporting.</p>
+                <div class="card-content">
+                    <span class="tech-tag">C# | SQL Server | Windows Forms</span>
+                    <h3>Medical Management System</h3>
+                    <p>Developed a full CRUD application optimized for managing patients, doctors, appointments, and medical diagnoses[cite: 1]. Features a structured relational database and built-in corporate reporting[cite: 1].</p>
+                </div>
                 <div class="project-actions">
-                    <!-- Placeholders for interactive buttons -->
-                    <a href="#" class="btn card-btn" onclick="alert('Placeholder: Downloading Project Manual...')">📄 Download Manual</a>
-                    <a href="#" class="btn card-btn" onclick="alert('Placeholder: Opening Video Demo...')">🎬 Watch Demo</a>
+                    <a href="#" class="btn btn-card" onclick="alert('Placeholder: Triggering Medical Management Manual download...')">📄 Manual</a>
+                    <a href="#" class="btn btn-card" onclick="alert('Placeholder: Launching Video Demo...')">🎬 Video Demo</a>
                 </div>
             </div>
 
             <!-- Project 2 -->
             <div class="project-card">
-                <h3>Data Analytics Platform</h3>
-                <p class="tech-stack">Python | REST API</p>
-                <p>A Python application that retrieves API data, performs statistical analysis, and visualizes complex results.</p>
+                <div class="card-content">
+                    <span class="tech-tag">Python | REST API</span>
+                    <h3>Data Analytics Platform</h3>
+                    <p>Built an analytical tool that interfaces with external REST APIs to pull live data data packets, execute statistical analysis algorithms, and render clean data visualizations[cite: 1].</p>
+                </div>
                 <div class="project-actions">
-                    <a href="#" class="btn card-btn" onclick="alert('Placeholder: Downloading Project Manual...')">📄 Download Manual</a>
-                    <a href="#" class="btn card-btn" onclick="alert('Placeholder: Opening Video Demo...')">🎬 Watch Demo</a>
+                    <a href="#" class="btn btn-card" onclick="alert('Placeholder: Triggering Analytics Platform Manual download...')">📄 Manual</a>
+                    <a href="#" class="btn btn-card" onclick="alert('Placeholder: Launching Video Demo...')">🎬 Video Demo</a>
                 </div>
             </div>
 
             <!-- Project 3 -->
             <div class="project-card">
-                <h3>Medical History Web Application</h3>
-                <p class="tech-stack">Java | SQL</p>
-                <p>Implemented secure authentication, distinct user roles, and comprehensive medical record management systems.</p>
+                <div class="card-content">
+                    <span class="tech-tag">Java | SQL</span>
+                    <h3>Medical History Web Application</h3>
+                    <p>Designed and deployed a secure web environment utilizing authentication protocols, role-based access controls (RBAC), and protected medical record management features[cite: 1].</p>
+                </div>
                 <div class="project-actions">
-                    <a href="#" class="btn card-btn" onclick="alert('Placeholder: Downloading Project Manual...')">📄 Download Manual</a>
-                    <a href="#" class="btn card-btn" onclick="alert('Placeholder: Opening Video Demo...')">🎬 Watch Demo</a>
+                    <a href="#" class="btn btn-card" onclick="alert('Placeholder: Triggering Web App Manual download...')">📄 Manual</a>
+                    <a href="#" class="btn btn-card" onclick="alert('Placeholder: Launching Video Demo...')">🎬 Video Demo</a>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <h2>Professional Experience</h2>
+    <!-- Professional Experience Timeline -->
+    <section id="experience" class="section-container">
+        <div class="section-header">
+            <h2>Professional History</h2>
+        </div>
         <div class="timeline">
-            <div class="timeline-item">
-                <h4>Roger Electric — Sales Associate</h4>
-                <p class="date">Sep 2023 - Present</p>
-                <p>Managed electrical inventory databases, assisted customers, and supported project operations.</p>
+            <div class="timeline-card">
+                <div class="timeline-header">
+                    <h4>Roger Electric</h4>
+                    <span class="timeline-date">Sep 2023 - Present</span>
+                </div>
+                <p class="role-title">Sales Associate & Inventory Database Support</p>
+                <p class="role-desc">Maintained database integrity for technical electrical inventories, optimized asset logging, and assisted client operations[cite: 1].</p>
             </div>
-            <div class="timeline-item">
-                <h4>Securitas — Security Officer</h4>
-                <p class="date">Sep 2020 - Sep 2023</p>
-                <p>Monitored facilities, enforced safety procedures, and communicated effectively with staff and visitors.</p>
+
+            <div class="timeline-card">
+                <div class="timeline-header">
+                    <h4>Securitas</h4>
+                    <span class="timeline-date">Sep 2020 - Sep 2023</span>
+                </div>
+                <p class="role-title">Security Officer</p>
+                <p class="role-desc">Managed facilities protection, enforced operational compliance procedures, and handled critical team communications[cite: 1].</p>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2>Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Programming & Databases</h3>
-                <p>Python, Java, C#, C++, SQL, HTML/CSS, SQL Server</p>
+    <!-- Technical Core Competencies -->
+    <section id="skills" class="section-container light-bg">
+        <div class="section-header">
+            <h2>Core Competencies</h2>
+        </div>
+        <div class="skills-wrapper">
+            <div class="skills-block">
+                <h3>Development & Architecture</h3>
+                <div class="skills-tags">
+                    <span>Python</span><span>Java</span><span>C#</span><span>C++</span><span>SQL</span><span>HTML5 / CSS3</span><span>SQL Server</span>
+                </div>
             </div>
-            <div class="skill-category">
-                <h3>Cloud & Tools</h3>
-                <p>AWS, Azure, Windows Server Manager, Linux, VirtualBox, GitHub</p>
+            <div class="skills-block">
+                <h3>Systems & Infrastructure</h3>
+                <div class="skills-tags">
+                    <span>AWS</span><span>Azure</span><span>Windows Server</span><span>Linux Administration</span><span>VirtualBox</span><span>GitHub Workflow</span>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Clean Corporate Footer -->
     <footer>
-        <p>&copy; 2026 Juan S. Reyes Nieves. Built with HTML & CSS.</p>
+        <div class="footer-content">
+            <p>&copy; 2026 Juan S. Reyes Nieves. All Rights Reserved.</p>
+            <p class="footer-subtext">Built for performance using clean semantic HTML & CSS</p>
+        </div>
     </footer>
 
 </body>
